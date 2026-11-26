@@ -1,29 +1,29 @@
 <!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#172554">
-<title>Indoor-Navigation</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-<script src="script.js" defer></script>
-</head>
-<body>
-<main class="container">
-<h1>Indoor-Navigation</h1>
-<p id="status" class="status" role="status" aria-live="polite">Kamera ist ausgeschaltet.</p>
-<div id="reader" aria-label="Kamerabild zur QR-Code-Erkennung"></div>
-<div class="controls">
-<button id="startButton" type="button">Kamera starten</button>
-<button id="stopButton" type="button" disabled>Kamera stoppen</button>
-<button id="repeatButton" type="button">Standort erneut ansagen</button>
-</div>
-<section class="location" aria-labelledby="locationHeading">
-<h2 id="locationHeading">Erkannter Standort</h2>
-<p id="location" aria-live="polite">Noch kein QR-Code erkannt.</p>
-</section>
-<p class="hint">Halte einen Standort-QR-Code vor die Kamera. Die erkannte Position wird angezeigt und vorgelesen.</p>
-</main>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#172554">
+    <title>Indoor-Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Indoor-Navigation</h1>
+      <p id="status" class="status" role="status" aria-live="polite">Kamera ist ausgeschaltet.</p>
+      <div id="reader" aria-label="Kamerabild zur QR-Code-Erkennung"></div>
+    <div class="controls">
+      <button id="startButton" type="button">Kamera starten</button>
+      <button id="stopButton" type="button" disabled>Kamera stoppen</button>
+      <button id="repeatButton" type="button">Standort erneut ansagen</button>
+    </div>
+      <section class="location" aria-labelledby="locationHeading">
+        <h2 id="locationHeading">Erkannter Standort</h2>
+        <p id="location" aria-live="polite">Noch kein QR-Code erkannt.</p>
+      </section>
+      <p class="hint">Halte einen Standort-QR-Code vor die Kamera. Die erkannte Position wird angezeigt und vorgelesen.</p>
+    </main>
+  </body>
 </html>
