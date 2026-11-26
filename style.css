@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 20px; background: #f1f5f9; color: #111827; font-family: system-ui, Arial, sans-serif; }
+.container { width: 100%; max-width: 620px; margin: 0 auto; }
+h1 { text-align: center; font-size: clamp(1.8rem, 6vw, 2.3rem); }
+.status, .location { padding: 18px; background: #fff; border: 2px solid #334155; border-radius: 14px; }
+.status { font-size: 1.15rem; text-align: center; }
+#reader { width: 100%; margin: 20px auto; overflow: hidden; background: #fff; border: 2px solid #334155; border-radius: 14px; }
+.controls { display: flex; flex-direction: column; gap: 14px; }
+button { width: 100%; min-height: 64px; padding: 14px; border: 3px solid #172554; border-radius: 12px; background: #172554; color: #fff; font-size: 1.2rem; font-weight: 700; cursor: pointer; }
+button:focus-visible { outline: 5px solid #f59e0b; outline-offset: 4px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.location { margin-top: 22px; }
+.location h2 { margin-top: 0; font-size: 1.25rem; }
+#location { font-size: 1.5rem; font-weight: 700; overflow-wrap: anywhere; }
+.hint { line-height: 1.5; }
